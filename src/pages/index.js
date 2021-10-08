@@ -3,6 +3,7 @@ import "./styles.scss";
 
 import InfoCard from "../components/InfoCard";
 import NavBar from "../components/NavBar";
+import Projects from "../components/Projects";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,8 @@ const IndexPage = () => {
         <InfoCard />
 
         <NavBar />
+
+        <Projects />
       </div>
     </main>
   );
