@@ -2,6 +2,7 @@ import * as React from "react";
 import "./styles.scss";
 
 import InfoCard from "../components/InfoCard";
+import NavBar from "../components/NavBar";
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,8 @@ const IndexPage = () => {
         <h2>Full-Stack Developer</h2>
 
         <InfoCard />
+
+        <NavBar />
       </div>
     </main>
   );
