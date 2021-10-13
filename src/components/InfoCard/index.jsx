@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function InfoCard() {
   return (
@@ -19,7 +20,14 @@ export default function InfoCard() {
         </div>
       </div>
       <div className="card-container__primary card">
-        <div className="avatar">Avatar</div>
+        <div className="avatar">
+          {" "}
+          <StaticImage
+            className="david"
+            src="../../assets/images/david.jpg"
+            alt="David Kostuchenko seating down"
+          />
+        </div>
         <a>Resume</a>
         <a>Projects</a>
         <a>Contact</a>
