@@ -7,23 +7,48 @@ import { useInView } from "react-intersection-observer";
 import InfoCard from "../components/InfoCard";
 import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
+import Resume from "../components/Resume";
+import Contact from "../components/Contact";
 
 const IndexPage = () => {
   const { width } = useWindowDimensions();
   const isMobile = width <= 768;
 
+  const [heroSectionRef, heroSectionInView] = useInView({
+    triggerOnce: false,
+    rootMargin: "-150px",
+  });
+  const [projectsSectionRef, projectsSectionInView] = useInView({
+    triggerOnce: false,
+    rootMargin: isMobile ? "-180px" : "-300px",
+  });
+  const [resumeSectionRef, resumeSectionInView] = useInView({
+    triggerOnce: false,
+    rootMargin: isMobile ? "-180px" : "-300px",
+  });
+
   return (
     <main className="main-app">
       <div className="main-app__container">
-        <title>Home Page</title>
-        <h1>David Kostuchenko</h1>
-        <h2>Full-Stack Developer</h2>
+        <div className="main-app__container__hero-wrapper" ref={heroSectionRef}>
+          <title>Home Page</title>
+          <h1>David Kostuchenko</h1>
+          <h2>Full-Stack Developer</h2>
 
-        <InfoCard />
+          <InfoCard />
+        </div>
 
-        <NavBar />
+        <NavBar
+          heroSectionInView={heroSectionInView}
+          projectsSectionInView={projectsSectionInView}
+          resumeSectionInView={resumeSectionInView}
+        />
 
-        <Projects />
+        <Projects projectsSectionRef={projectsSectionRef} />
+
+        <Resume resumeSectionRef={resumeSectionRef} />
+
+        <Contact />
       </div>
     </main>
   );

@@ -33,7 +33,7 @@ export default function InfoCard() {
         <a>Contact</a>
       </div>
       <div className="card-container__secondary card extra-technologies">
-        <h3> Extra Technologies:</h3>
+        <h3> Extra:</h3>
         <div>
           <span>AntD</span>
           <span>Material UI</span>
