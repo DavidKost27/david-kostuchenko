@@ -2,8 +2,12 @@ import React, { useEffect } from "react";
 import "./styles.scss";
 
 export default function NavBar(props) {
-  const { heroSectionInView, projectsSectionInView, resumeSectionInView } =
-    props;
+  const {
+    heroSectionInView,
+    projectsSectionInView,
+    resumeSectionInView,
+    contactSectionInView,
+  } = props;
 
   return (
     <div className="navbar">
@@ -16,7 +20,9 @@ export default function NavBar(props) {
       <a href="" className={`${resumeSectionInView ? "active" : ""}`}>
         Resume
       </a>
-      <a href="">Contact</a>
+      <a href="" href="" className={`${contactSectionInView ? "active" : ""}`}>
+        Contact
+      </a>
     </div>
   );
 }

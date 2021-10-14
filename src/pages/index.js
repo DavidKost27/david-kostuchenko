@@ -9,6 +9,7 @@ import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const IndexPage = () => {
   const { width } = useWindowDimensions();
@@ -23,6 +24,10 @@ const IndexPage = () => {
     rootMargin: isMobile ? "-180px" : "-300px",
   });
   const [resumeSectionRef, resumeSectionInView] = useInView({
+    triggerOnce: false,
+    rootMargin: isMobile ? "-180px" : "-300px",
+  });
+  const [contactSectionRef, contactSectionInView] = useInView({
     triggerOnce: false,
     rootMargin: isMobile ? "-180px" : "-300px",
   });
@@ -42,13 +47,16 @@ const IndexPage = () => {
           heroSectionInView={heroSectionInView}
           projectsSectionInView={projectsSectionInView}
           resumeSectionInView={resumeSectionInView}
+          contactSectionInView={contactSectionInView}
         />
 
         <Projects projectsSectionRef={projectsSectionRef} />
 
         <Resume resumeSectionRef={resumeSectionRef} />
 
-        <Contact />
+        <Contact contactSectionRef={contactSectionRef} />
+
+        <Footer />
       </div>
     </main>
   );
