@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  margin-top: 100px;
+  &__icons {
+    display: flex;
+    flex-direction: row;
+
+    &__gmail {
+      margin-right: 10px;
+    }
+    &__gmail:hover {
+      fill: gray;
+    }
+    &__linkedin {
+      margin-right: 10px;
+    }
+    &__linkedin:hover {
+      fill: gray;
+    }
+    &__github {
+    }
+    &__github:hover {
+      fill: gray;
+    }
+  }
+
+  > p {
+    padding-top: 5px;
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+}
