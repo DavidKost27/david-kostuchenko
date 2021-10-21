@@ -13,12 +13,8 @@ export default function Contact(props) {
       </p>
       <div className="email">
         Email:{" "}
-        <a
-          href="mailto:davidkost1999@gmail.com"
-          target="_blank"
-          onclick="window.open('your WS URL');"
-        >
-          davidkost1999@gmail.com
+        <a href="mailto:davidkost.dev@gmail.com" target="_blank">
+          davidkost.dev@gmail.com
         </a>
       </div>
     </div>

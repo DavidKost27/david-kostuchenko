@@ -7,12 +7,16 @@ export default function Resume(props) {
   return (
     <div className="resume-section" ref={resumeSectionRef} id="resume">
       <h2>Resume</h2>
-      <div className="resume">
+      <a
+        className="resume"
+        href="https://docs.google.com/document/d/1WtvXA5dex7o0x78lK4jv7I6GAc1NXCYLQcM-H-OxiRo/edit?usp=sharing"
+        target="_blank"
+      >
         <StaticImage
           src="../../assets/images/resume.PNG"
           alt="Edi Hovalot moving company."
         />
-      </div>
+      </a>
     </div>
   );
 }
