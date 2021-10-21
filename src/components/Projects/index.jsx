@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Projects(props) {
   const { projectsSectionRef } = props;
   return (
-    <div className="projects" ref={projectsSectionRef}>
+    <div className="projects" ref={projectsSectionRef} id="projects">
       <h2>Projects</h2>
 
       <div className="projects__wrapper">
