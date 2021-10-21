@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function InfoCard() {
   return (
-    <div className="card-container">
+    <div className="card-container" id="home">
       <div className="card-container__secondary card skills">
         <h3>Skills:</h3>
         <div>
@@ -28,9 +28,9 @@ export default function InfoCard() {
             alt="David Kostuchenko seating down"
           />
         </div>
-        <a>Resume</a>
-        <a>Projects</a>
-        <a>Contact</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
       <div className="card-container__secondary card extra-technologies">
         <h3> Extra:</h3>
