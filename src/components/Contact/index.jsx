@@ -4,7 +4,7 @@ import "./styles.scss";
 export default function Contact(props) {
   const { contactSectionRef } = props;
   return (
-    <div className="contact-container" ref={contactSectionRef}>
+    <div className="contact-container" ref={contactSectionRef} id="contact">
       <h2>Contact Me</h2>
 
       <p>
