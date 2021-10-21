@@ -69,7 +69,7 @@ export default function Projects(props) {
 
         <div className="projects__wrapper__container">
           <StaticImage
-            src="../../assets/images/steve_antonioni.png"
+            src="../../assets/images/steve_antonioni.PNG"
             alt="Steve Antonioni educator & creator."
           />
           <h3>Steve Antonioni</h3>
