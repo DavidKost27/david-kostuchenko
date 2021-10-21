@@ -29,6 +29,14 @@
     margin: 5px;
     text-decoration: none;
     transition: 0.6s linear all;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   > a :visited {
     color: rgb(0, 0, 0);
@@ -40,4 +48,14 @@
     transition: background-color 0.6s ease-in-out;
     color: rgb(255, 255, 255);
   }
+}
+
+#home {
+  scroll-margin-top: 100px;
+}
+#projects {
+  scroll-margin-top: 80px;
+}
+#resume {
+  scroll-margin-top: -20px;
 }

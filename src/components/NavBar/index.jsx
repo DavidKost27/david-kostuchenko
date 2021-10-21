@@ -11,16 +11,19 @@ export default function NavBar(props) {
 
   return (
     <div className="navbar">
-      <a href="" className={`${heroSectionInView ? "active" : ""}`}>
+      <a className={`${heroSectionInView ? "active" : ""}`} href="#home">
         Home
       </a>
-      <a href="" className={`${projectsSectionInView ? "active" : ""}`}>
+      <a
+        className={`${projectsSectionInView ? "active" : ""}`}
+        href="#projects"
+      >
         Projects
       </a>
-      <a href="" className={`${resumeSectionInView ? "active" : ""}`}>
+      <a className={`${resumeSectionInView ? "active" : ""}`} href="#resume">
         Resume
       </a>
-      <a href="" href="" className={`${contactSectionInView ? "active" : ""}`}>
+      <a className={`${contactSectionInView ? "active" : ""}`} href="#contact">
         Contact
       </a>
     </div>
