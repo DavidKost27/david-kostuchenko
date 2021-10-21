@@ -10,18 +10,26 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer__icons">
-        <Gmail
-          className="footer__icons__gmail"
-          style={{ width: "34px", height: "auto" }}
-        />
-        <Linkedin
-          className="footer__icons__linkedin"
-          style={{ width: "31px", height: "auto" }}
-        />
-        <Github
-          className="footer__icons__github"
-          style={{ width: "32px", height: "auto" }}
-        />
+        <a href="">
+          <Gmail
+            className="footer__icons__gmail"
+            style={{ width: "34px", height: "auto" }}
+          />
+        </a>
+
+        <a href="">
+          <Linkedin
+            className="footer__icons__linkedin"
+            style={{ width: "31px", height: "auto" }}
+          />
+        </a>
+
+        <a href="">
+          <Github
+            className="footer__icons__github"
+            style={{ width: "32px", height: "auto" }}
+          />
+        </a>
       </div>
       <p>© David Kostuchenko - 2021</p>
     </div>
