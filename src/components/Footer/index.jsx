@@ -10,7 +10,11 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer__icons">
-        <a href="mailto:davidkost.dev@gmail.com" target="_blank">
+        <a
+          href="mailto:davidkost.dev@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Gmail
             className="footer__icons__gmail"
             style={{ width: "34px", height: "auto" }}
@@ -20,6 +24,7 @@ export default function Footer() {
         <a
           href="https://www.linkedin.com/in/david-edvard-kostuchenko-aba120200/"
           target="_blank"
+          rel="noreferrer"
         >
           <Linkedin
             className="footer__icons__linkedin"
@@ -27,7 +32,11 @@ export default function Footer() {
           />
         </a>
 
-        <a href="https://github.com/DavidKost27" target="_blank">
+        <a
+          href="https://github.com/DavidKost27"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Github
             className="footer__icons__github"
             style={{ width: "32px", height: "auto" }}
