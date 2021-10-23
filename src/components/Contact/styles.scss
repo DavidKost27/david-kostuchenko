@@ -5,7 +5,8 @@
   font-family: "IBM Plex Sans Condensed", sans-serif;
   text-align: center;
   padding: 0 20px;
-  padding-top: 140px;
+  padding-top: 200px;
+  padding-bottom: 80px;
   > h2 {
     font-size: 30px;
   }
@@ -19,6 +20,7 @@
     flex-direction: row;
     padding: 5px 10px;
     background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease-in-out;
     color: rgb(0, 0, 0);
     font-size: 20px;
     margin-top: 15px;
@@ -46,6 +48,7 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
     > a {
       text-decoration: none;
       color: rgb(255, 255, 255);

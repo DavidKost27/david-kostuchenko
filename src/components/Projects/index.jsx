@@ -10,10 +10,13 @@ export default function Projects(props) {
 
       <div className="projects__wrapper">
         <div className="projects__wrapper__container">
-          <StaticImage
-            src="../../assets/images/edi_hovalot.png"
-            alt="Edi Hovalot moving company."
-          />
+          <a href="https://edihovalot.co.il/" target="_blank" rel="noreferrer">
+            <StaticImage
+              className="preview"
+              src="../../assets/images/edi_hovalot.png"
+              alt="Edi Hovalot moving company."
+            />
+          </a>
           <h3>Edi Hovalot</h3>
           <p>
             A website for a moving company that specialises in sensetive and
@@ -39,14 +42,18 @@ export default function Projects(props) {
         </div>
 
         <div className="projects__wrapper__container">
-          <StaticImage
-            src="../../assets/images/liza_willow.png"
-            alt="Liza Willow's Personal online portfolio."
-          />
+          <a href="https://lizawillow.com/" target="_blank" rel="noreferrer">
+            <StaticImage
+              className="preview"
+              src="../../assets/images/liza_willow.png"
+              alt="Liza Willow's Personal online portfolio."
+            />
+          </a>
           <h3>Liza Willow</h3>
           <p>
-            Personal online portfolio showcasing the illustrations of a young
-            and aspiring digital illustrator Liza Willow.
+            Personal online portfolio showcasing the colorful and unique
+            illustrations of a young and aspiring digital illustrator Liza
+            Willow.
           </p>
 
           <a
@@ -68,10 +75,17 @@ export default function Projects(props) {
         </div>
 
         <div className="projects__wrapper__container">
-          <StaticImage
-            src="../../assets/images/steve_antonioni.PNG"
-            alt="Steve Antonioni educator & creator."
-          />
+          <a
+            href="https://steve-antonioni.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <StaticImage
+              className="preview"
+              src="../../assets/images/steve_antonioni.PNG"
+              alt="Steve Antonioni educator & creator."
+            />
+          </a>
           <h3>Steve Antonioni</h3>
           <p>
             A personal brand website of Steve Antonioni, a creator & educator in
@@ -97,10 +111,13 @@ export default function Projects(props) {
         </div>
 
         <div className="projects__wrapper__container">
-          <StaticImage
-            src="../../assets/images/david_kostuchenko.png"
-            alt="David Kostuchenko's portfolio."
-          />
+          <a href="https://lizawillow.com/" target="_blank" rel="noreferrer">
+            <StaticImage
+              src="../../assets/images/david_kostuchenko.png"
+              alt="David Kostuchenko's portfolio."
+              className="preview"
+            />
+          </a>
           <h3>David Kostuchenko</h3>
           <p>
             My personal website showcasing my professional and personal projects
