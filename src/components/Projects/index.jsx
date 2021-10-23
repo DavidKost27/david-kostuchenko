@@ -1,15 +1,36 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./styles.scss";
 import { StaticImage } from "gatsby-plugin-image";
+import { motion } from "framer-motion";
 
 export default function Projects(props) {
-  const { projectsSectionRef } = props;
+  const { projectsSectionRef, projectsSectionAnimation, variants } = props;
   return (
     <div className="projects" ref={projectsSectionRef} id="projects">
-      <h2>Projects</h2>
+      <motion.h2
+        animate={projectsSectionAnimation}
+        initial="hidden"
+        variants={variants}
+        transition={{
+          duration: 0.8,
+          ease: [0.6, 0.05, -0.01, 0.9],
+        }}
+      >
+        Projects
+      </motion.h2>
 
       <div className="projects__wrapper">
-        <div className="projects__wrapper__container">
+        <motion.div
+          className="projects__wrapper__container"
+          animate={projectsSectionAnimation}
+          initial="hidden"
+          variants={variants}
+          transition={{
+            duration: 0.8,
+            ease: [0.6, 0.05, -0.01, 0.9],
+          }}
+        >
           <a href="https://edihovalot.co.il/" target="_blank" rel="noreferrer">
             <StaticImage
               className="preview"
@@ -39,9 +60,18 @@ export default function Projects(props) {
           >
             Demo
           </a>
-        </div>
+        </motion.div>
 
-        <div className="projects__wrapper__container">
+        <motion.div
+          className="projects__wrapper__container"
+          animate={projectsSectionAnimation}
+          initial="hidden"
+          variants={variants}
+          transition={{
+            duration: 0.8,
+            ease: [0.6, 0.05, -0.01, 0.9],
+          }}
+        >
           <a href="https://lizawillow.com/" target="_blank" rel="noreferrer">
             <StaticImage
               className="preview"
@@ -72,9 +102,18 @@ export default function Projects(props) {
           >
             Demo
           </a>
-        </div>
+        </motion.div>
 
-        <div className="projects__wrapper__container">
+        <motion.div
+          className="projects__wrapper__container"
+          animate={projectsSectionAnimation}
+          initial="hidden"
+          variants={variants}
+          transition={{
+            duration: 1.5,
+            ease: [0.6, 0.05, -0.01, 0.9],
+          }}
+        >
           <a
             href="https://steve-antonioni.web.app/"
             target="_blank"
@@ -108,10 +147,19 @@ export default function Projects(props) {
           >
             Demo
           </a>
-        </div>
+        </motion.div>
 
-        <div className="projects__wrapper__container">
-          <a href="https://lizawillow.com/" target="_blank" rel="noreferrer">
+        <motion.div
+          className="projects__wrapper__container"
+          animate={projectsSectionAnimation}
+          initial="hidden"
+          variants={variants}
+          transition={{
+            duration: 1.5,
+            ease: [0.6, 0.05, -0.01, 0.9],
+          }}
+        >
+          <a href="#home">
             <StaticImage
               src="../../assets/images/david_kostuchenko.png"
               alt="David Kostuchenko's portfolio."
@@ -132,10 +180,10 @@ export default function Projects(props) {
           >
             Github
           </a>
-          <a href="" className="link" target="_blank" rel="noreferrer">
+          <a href="#home" className="link">
             Demo
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
