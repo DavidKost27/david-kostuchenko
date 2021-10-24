@@ -1,7 +1,13 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://davidkostuchenko.com/",
     title: "David Kostuchenko",
+    description:
+      "My name is David Edvard Kostuchenko and I'm a full-stack developer mainly focuced on front-end and user experience currentrly, I'm using the MERN stack mainly and I like to build new and challenging stuff.",
   },
   plugins: [
     {
@@ -18,6 +24,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

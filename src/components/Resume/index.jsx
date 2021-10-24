@@ -45,7 +45,7 @@ export default function Resume(props) {
           duration: 1.5,
           ease: [0.6, 0.05, -0.01, 0.9],
         }}
-        href="../../assets/pdf/David_Kostuchenko.pdf"
+        href="https://docs.google.com/document/d/1WtvXA5dex7o0x78lK4jv7I6GAc1NXCYLQcM-H-OxiRo/edit#"
         download
         className="resume-section__download"
       >
